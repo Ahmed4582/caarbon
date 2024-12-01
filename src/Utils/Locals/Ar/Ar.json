@@ -1,0 +1,323 @@
+{
+  "header": {
+    "welcomeMessage": "مرحبا بكم في كاربون  ",
+    "followUs": "تابعنا",
+    "companyLogo": "شعار الشركة",
+    "searchPlaceholder": "ابحث عن أي شيء...",
+    "searchIconAlt": "أيقونة البحث",
+    "home": "الصفحة الرئيسية",
+    "products": "المنتجات",
+    "needHelp": "بحاجة إلى مساعدة",
+    "menu": "القائمة",
+    "login": "تسجيل الدخول",
+    "noResults": "لا توجد نتائج تطابق بحثك"
+  },
+  "showBtn": {
+    "shopNow": "تسوق الآن"
+  },
+  "SimilarProducts": "    المنتجات المشابهة",
+  "Heading": {
+    "SliderHeading": "تسوق مع الفئات"
+  },
+  "Product": {
+    "featuredProducts": "المنتجات المميزة",
+    "allProduct": "جميع المنتجات",
+    "smartPhone": "الهاتف الذكي",
+    "laptop": "حاسوب محمول",
+    "headphone": "سماعة رأس",
+    "tv": "تلفاز",
+    "browseAllProducts": "تصفح جميع المنتجات"
+  },
+  "footer": {
+    "computerLaptop": "حاسوب و لاب توب",
+    "smartphone": "هاتف ذكي",
+    "headphone": "سماعات رأس",
+    "accessories": "إكسسوارات",
+    "cameraPhoto": "كاميرا و صور",
+    "tvHomes": "تلفزيون و منازل",
+    "shopProduct": "تسوق المنتجات",
+    "shoppingCart": "عربة التسوق",
+    "customerHelp": "بوابتك لعالم التقنية",
+    "aboutUs": "معلومات عنا",
+    "game": "لعبة",
+    "iphone": "آيفون",
+    "tv": "تلفزيون",
+    "asusLaptop": "لاب توب أسوس",
+    "macbook": "ماك بوك",
+    "ssd": "قرص SSD",
+    "graphicsCard": "بطاقة رسومات",
+    "powerBank": "باور بانك",
+    "smartTV": "تلفزيون ذكي",
+    "speaker": "مكبر الصوت",
+    "tablet": "تابلت",
+    "microwave": "ميكروويف",
+    "samsung": "سامسونج",
+    "customerSupport": "دعم العملاء:",
+    "supportDescription": "لوريم إيبسوم دولور سيت أميت كونسكتتور. إن فيغيات نولا لوبرتيس فيسيلسيس أميت.",
+    "browseAllProduct": "تصفح جميع المنتجات",
+    "topCategory": "الفئة الأعلى",
+    "quickLinks": "روابط سريعة",
+    "popularTags": "الوسوم الشائعة"
+  },
+  "subscription": {
+    "title": "اشترك في نشرتنا الإخبارية",
+    "description": "اشترك في النشرة ليصلك احدث المنشورات",
+    "emailPlaceholder": "عنوان البريد الإلكتروني",
+    "subscribeButton": "اشترك"
+  },
+  "categories": {
+    "electronics": "الأجهزة الإلكترونية",
+    "computers": "الحواسيب و اللابتوبات",
+    "accessories": "إكسسوارات الحاسوب",
+    "smartphones": "الهواتف الذكية",
+    "headphones": "سماعات الرأس",
+    "mobileAccessories": "إكسسوارات الهواتف",
+    "gamingConsole": "وحدات الألعاب",
+    "cameraPhoto": "الكاميرات والصور",
+    "tvHomeAppliances": "التلفزيون والأجهزة المنزلية"
+  },
+  "sidebar": {
+    "category": "الفئات",
+    "priceRange": "نطاق السعر",
+    "popularBrands": "أشهر العلامات التجارية",
+    "popularTags": "العلامات الشهيرة"
+  },
+  "priceRanges": {
+    "allPrice": "جميع الأسعار",
+    "under20": "أقل من 20 دولار",
+    "from20to100": "من 20 إلى 100 دولار",
+    "from100to500": "من 100 إلى 500 دولار",
+    "from500to1000": "من 500 إلى 1000 دولار",
+    "from1000to10000": "من 1000 إلى 10000 دولار"
+  },
+  "searchHeader": {
+    "mostPopular": "الأكثر شهرة",
+    "newest": "الأحدث",
+    "priceLowToHigh": "السعر: من الأقل إلى الأعلى",
+    "priceHighToLow": "السعر: من الأعلى إلى الأدنى",
+    "rating": "التقييم",
+    "sortBy": "ترتيب حسب",
+    "searchPlaceholder": "ابحث عن أي شيء...",
+    "activeFilters": "الفلاتر النشطة",
+    "resultsFound": "تم العثور على نتائج"
+  },
+  "dropdown": {
+    "myProducts": "منتجاتي",
+    "userInfo": "معلومات المستخدم",
+    "logout": "تسجيل الخروج"
+  },
+  "userInfo": {
+    "loading": "جاري التحميل...",
+    "error": "فشل في تحميل معلومات المستخدم.",
+    "noInfo": "لا توجد معلومات عن المستخدم.",
+    "unknownInitial": "؟",
+    "unknownUser": "مستخدم غير معروف",
+    "noEmail": "لم يتم تقديم بريد إلكتروني",
+    "phoneNumber": "رقم الهاتف"
+  },
+  "wishlist_error": "خطأ في تحديث قائمة المفضلة",
+  "promoting_product": "ترويج المنتج",
+  "fetch_error": "خطأ في جلب البيانات الأولية",
+  "no_products": "لا توجد منتجات متاحة.",
+  "promote_item": "ترويج العنصر",
+  "archive_item": "أرشفة العنصر",
+  "remove_from_wishlist": "إزالة من قائمة المفضلة",
+  "add_to_wishlist": "إضافة إلى قائمة المفضلة",
+  "product_image": "صورة المنتج",
+  "currency": "ل.س",
+  "view_details": "عرض التفاصيل",
+  "addProduct": {
+    "title": "إضافة منتج جديد",
+    "subtitle": "املأ المعلومات أدناه لإدراج منتجك",
+    "images": {
+      "title": "صور المنتج",
+      "uploadCount": "{{count}}/{{max}} الصور المرفوعة",
+      "upload": "رفع الملفات",
+      "dragDrop": "أو اسحب وأفلت",
+      "requirements": "PNG، JPG، GIF حتى 10 ميجابايت (الحد الأقصى {{max}} صور)"
+    },
+    "basicInfo": {
+      "title": "المعلومات الأساسية",
+      "productTitle": "عنوان المنتج",
+      "productTitlePlaceholder": "أدخل عنوان المنتج",
+      "description": "الوصف",
+      "descriptionPlaceholder": "أدخل وصف المنتج"
+    },
+    "pricing": {
+      "title": "التسعير",
+      "salePrice": "سعر البيع",
+      "salePricePlaceholder": "0.00",
+      "stockQuantity": "الكمية المتوفرة",
+      "stockQuantityPlaceholder": "أدخل الكمية"
+    },
+    "location": {
+      "title": "الموقع (المحافظة)",
+      "placeholder": "اختر محافظة"
+    },
+    "categoriesAndTags": {
+      "title": "الفئات والعلامات",
+      "category": "الفئة",
+      "categoryPlaceholder": "اختر فئة",
+      "tags": "العلامات"
+    },
+    "buttons": {
+      "publishing": "جاري الاضافه...",
+      "publish": "اضافه المنتج"
+    },
+    "alerts": {
+      "success": "تمت إضافة منتجك بنجاح",
+      "imageLimit": "يمكنك رفع {{max}} صور كحد أقصى. يرجى إزالة بعض الصور أولاً."
+    }
+  },
+  "syrianGovernorates": {
+    "Aleppo": "حلب",
+    "Damascus": "دمشق",
+    "Daraa": "درعا",
+    "Deir ez-Zor": "دير الزور",
+    "Hama": "حماة",
+    "Al-Hasakah": "الحسكة",
+    "Homs": "حمص",
+    "Idlib": "إدلب",
+    "Latakia": "اللاذقية",
+    "Quneitra": "القنيطرة",
+    "Raqqa": "الرقة",
+    "Rif Dimashq": "ريف دمشق",
+    "Al-Suwayda": "السويداء",
+    "Tartus": "طرطوس"
+  },
+  "product": {
+    "notFound": "المنتج غير موجود",
+    "imageAlt": "صورة المنتج",
+    "thumbnailAlt": "صورة مصغرة للمنتج",
+    "availability": "التوافر",
+    "inStock": "متوفر في المخزن",
+    "outOfStock": "نفدت الكمية",
+    "currency": "جنيه",
+    "addToCart": "الاتصال بالبائع",
+    "tags": "الوسوم",
+    "productTags": {
+      "Premium": "مميز",
+      "New Arrival": "وصل حديثا",
+      "Limited Edition": "إصدار محدود",
+      "Best Seller": "الأكثر مبيعًا"
+    }
+  },
+  "login": {
+    "welcomeBack": "مرحبًا بعودتك",
+    "signInMessage": "يرجى تسجيل الدخول إلى حسابك",
+    "needLoginMessage": "يرجى تسجيل الدخول أولاً لزيارة هذه الصفحة",
+    "registrationSuccessMessage": "لقد تم التسجيل بنجاح.",
+    "loginNowMessage": "يرجى تسجيل الدخول",
+    "emailLabel": "عنوان البريد الإلكتروني",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "passwordLabel": "كلمة المرور",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "rememberMe": "تذكرني",
+    "signIn": "تسجيل الدخول",
+    "signingIn": "جاري تسجيل الدخول...",
+    "dontHaveAccount": "ليس لديك حساب؟",
+    "signUp": "إنشاء حساب"
+  },
+  "signUp": {
+    "createAccount": "أنشئ حسابًا",
+    "getStarted": "سجل للحصول على بداية",
+    "signingUp": "جارٍ التسجيل...",
+    "signUp": "سجل الآن",
+    "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
+    "signIn": "تسجيل الدخول"
+  },
+  "form": {
+    "username": "اسم المستخدم",
+    "enterUsername": "أدخل اسم المستخدم",
+    "email": "البريد الإلكتروني",
+    "enterEmail": "أدخل بريدك الإلكتروني",
+    "password": "كلمة المرور",
+    "enterPassword": "أدخل كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "reenterPassword": "أعد إدخال كلمة المرور",
+    "acceptTerms": "أوافق على الشروط والأحكام"
+  },
+  "register": {
+    "createAccount": "أنشئ حساباً",
+    "signUpToGetStarted": "سجل للحصول على البداية",
+    "username": "اسم المستخدم",
+    "email": "عنوان البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "acceptTerms": "أوافق على الشروط والأحكام",
+    "signUp": "التسجيل",
+    "signingUp": "جاري التسجيل...",
+    "alreadyHaveAccount": "هل لديك حساب؟",
+    "signIn": "تسجيل الدخول",
+    "enterUsername": "أدخل اسم المستخدم",
+    "enterEmail": "أدخل بريدك الإلكتروني",
+    "enterPassword": "أدخل كلمة المرور",
+    "reEnterPassword": "أعد إدخال كلمة المرور",
+    "redirectingIn": "لقد تم التسجيل بنجاح {{countdown}}",
+    "skip": "تخطي",
+    "phone": "رقم الهاتف"
+  },
+  "otp_description": "لقد أرسلنا رمز تحقق مكون من 6 أرقام إلى بريدك الإلكتروني / هاتفك. يرجى إدخاله أدناه.",
+  "one_time_password": "رمز التحقق",
+  "enter_otp": "أدخل رمز التحقق الخاص بك",
+  "verifying": "جار التحقق...",
+  "verify_otp": "تحقق من رمز التحقق",
+  "loginBtn": "تسجيل الدخول",
+  "available": "متوفر",
+  "not_available": "غير متوفر",
+  "Description": "الوصف",
+  "contact_us": "تواصل معانا",
+  "alert": {
+    "archived": "تم أرشفة منتجك بنجاح",
+    "published": "تم نشر منتجك بنجاح",
+    "loginSuccess": "لقد قمت بتسجيل الدخول بنجاح.",
+    "loginRequired": "يجب عليك تسجيل الدخول أولاً لإضافة هذا المنتج.",
+    "logoutSuccess": "لقد قمت بتسجيل الخروج بنجاح.",
+    "productAdded": "تم إضافة المنتج إلى قائمة الرغبات بنجاح.",
+    "productDeleted": "تم حذف المنتج من قائمة الرغبات بنجاح.",
+    "addSuccess": "تمت إضافة المنتج إلى سلة التسوق بنجاح",
+    "addError": "هذا المنتج موجود بالفعل في سلة التسوق",
+    "deleteCart": "تم حذف المنتج بنجاح",
+    "loginToken": "يجب عليك تسجيل الدخول أولاً لإضافة المنتج إلى سلة التسوق",
+    "update": "لقد قمت بتحديث كمية المنتج",
+    "updateError": "لا يمكنك إضافة أو إزالة المزيد من المبلغ"
+  },
+  "noPromotedProducts": "لا توجد منتجات ترويجية لعرضها",
+  "featuredProducts": "المنتجات المميزة",
+  "curatedProducts": "اطلع على منتجاتنا المختارة بعروض حصرية",
+  "specialOffer": "عرض خاص",
+  "inStock": "متوفر في المخزون",
+  "outOfStock": "نفذ من المخزون",
+  "viewDetails": "عرض التفاصيل",
+  "cart": {
+    "heading": "عربة التسوق",
+    "products": "المنتجات",
+    "quantity": "الكمية",
+    "subTotal": "الإجمالي الفرعي",
+    "removeItem": "إزالة العنصر",
+    "returnBtn": "العوده للتسوق",
+    "totals": {
+      "title": "إجمالي العربة",
+      "subTotal": "الإجمالي الفرعي",
+      "shipping": "الشحن",
+      "discount": "الخصم",
+      "tax": "الضريبة",
+      "total": "الإجمالي",
+      "checkout": "المتابعة إلى الدفع"
+    },
+    "free": "مجانا",
+    "items": {
+      "1": {
+        "title": "لوريم إيبسوم دولور سيت أميت.",
+        "description": "ميتوس ماسيناس مي نام فاوكيبوس."
+      },
+      "2": {
+        "title": "لوريم إيبسوم دولور سيت أميت.",
+        "description": "ميتوس ماسيناس مي نام فاوكيبوس."
+      }
+    }
+  },
+  "details": "عرض التفاصيل",
+  "contact": "تواصل معنا",
+  "SimllarData": "منتجات مشابهه"
+}

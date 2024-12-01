@@ -1,0 +1,325 @@
+{
+  "header": {
+    "welcomeMessage": "Welcome to Caarbon",
+    "followUs": "Follow us",
+    "companyLogo": "Company Logo",
+    "searchPlaceholder": "Search for anything...",
+    "searchIconAlt": "Search Icon",
+    "home": "Home",
+    "products": "Products",
+    "needHelp": "Need Help",
+    "menu": "Menu",
+    "login": "Login",
+    "noResults": "There are no results for your search"
+  },
+  "showBtn": {
+    "shopNow": "Shop Now"
+  },
+  "Heading": {
+    "SliderHeading": "Shop with Categories"
+  },
+  "Product": {
+    "featuredProducts": "Featured Products",
+    "allProduct": "All Products",
+    "smartPhone": "Smartphone",
+    "laptop": "Laptop",
+    "headphone": "Headphone",
+    "tv": "TV",
+    "browseAllProducts": "Browse All Products"
+  },
+  "Similar Products": "Similar Products",
+  "footer": {
+    "computerLaptop": "Computer & Laptop",
+    "smartphone": "SmartPhone",
+    "headphone": "Headphone",
+    "accessories": "Accessories",
+    "cameraPhoto": "Camera & Photo",
+    "tvHomes": "TV & Homes",
+    "shopProduct": "Shop Product",
+    "shoppingCart": "Shopping Cart",
+    "customerHelp": "Your gateway to the world of technology",
+    "aboutUs": "About Us",
+    "game": "Game",
+    "iphone": "Iphone",
+    "tv": "TV",
+    "asusLaptop": "Asus Laptop",
+    "macbook": "Macbook",
+    "ssd": "SSD",
+    "graphicsCard": "Graphics Card",
+    "powerBank": "Power Bank",
+    "smartTV": "Smart TV",
+    "speaker": "Speaker",
+    "tablet": "Tablet",
+    "microwave": "Microwave",
+    "samsung": "Samsung",
+    "customerSupport": "Customer Support:",
+    "supportDescription": "Lorem ipsum dolor sit amet consectetur. In feugiat nulla lobortis facilisis amet.",
+    "browseAllProduct": "Browse All Products",
+    "topCategory": "TOP CATEGORY",
+    "quickLinks": "QUICK LINKS",
+    "popularTags": "POPULAR TAGS",
+
+    "categories": {
+      "electronics": "Electronics Devices",
+      "computers": "Computer & Laptop",
+      "accessories": "Computer Accessories",
+      "smartphones": "Smartphones",
+      "headphones": "Headphones",
+      "mobileAccessories": "Mobile Accessories",
+      "gamingConsole": "Gaming Consoles",
+      "cameraPhoto": "Cameras & Photos",
+      "tvHomeAppliances": "TV & Home Appliances"
+    },
+    "sidebar": {
+      "category": "Categories",
+      "priceRange": "Price Range",
+      "popularBrands": "Popular Brands",
+      "popularTags": "Popular Tags"
+    },
+    "priceRanges": {
+      "allPrice": "All Price",
+      "under20": "Under $20",
+      "from20to100": "From $20 to $100",
+      "from100to500": "From $100 to $500",
+      "from500to1000": "From $500 to $1000",
+      "from1000to10000": "From $1000 to $10000"
+    },
+    "searchHeader": {
+      "mostPopular": "Most Popular",
+      "newest": "Newest",
+      "priceLowToHigh": "Price: Low to High",
+      "priceHighToLow": "Price: High to Low",
+      "rating": "Rating",
+      "sortBy": "Sort by",
+      "searchPlaceholder": "Search for anything...",
+      "activeFilters": "Active Filters",
+      "resultsFound": "Results found"
+    },
+    "dropdown": {
+      "myProducts": "My Products",
+      "userInfo": "User Info",
+      "logout": "Logout"
+    },
+    "userInfo": {
+      "loading": "Loading...",
+      "error": "Failed to load user information.",
+      "noInfo": "No user information available.",
+      "unknownInitial": "?",
+      "unknownUser": "Unknown User",
+      "noEmail": "No email provided",
+      "phoneNumber": "Phone Number"
+    },
+    "wishlist_error": "Error updating wishlist",
+    "promoting_product": "Promoting product",
+    "fetch_error": "Error fetching initial data",
+    "no_products": "No products available.",
+    "promote_item": "Promote item",
+    "archive_item": "Archive item",
+    "remove_from_wishlist": "Remove from wishlist",
+    "add_to_wishlist": "Add to wishlist",
+    "product_image": "Product image",
+    "currency": "SYP",
+    "view_details": "View Details",
+    "addProduct": {
+      "title": "Add New Product",
+      "subtitle": "Fill in the information below to list your product",
+      "images": {
+        "title": "Product Images",
+        "uploadCount": "{{count}}/{{max}} images uploaded",
+        "upload": "Upload files",
+        "dragDrop": "or drag and drop",
+        "requirements": "PNG, JPG, GIF up to 10MB (Maximum {{max}} images)"
+      },
+      "basicInfo": {
+        "title": "Basic Information",
+        "productTitle": "Product Title",
+        "productTitlePlaceholder": "Enter product title",
+        "description": "Description",
+        "descriptionPlaceholder": "Enter product description"
+      },
+      "pricing": {
+        "title": "Pricing",
+        "salePrice": "Sale Price",
+        "salePricePlaceholder": "0.00",
+        "stockQuantity": "Stock Quantity",
+        "stockQuantityPlaceholder": "Enter quantity"
+      },
+      "location": {
+        "title": "Location (Governorate)",
+        "placeholder": "Select a governorate"
+      },
+      "categoriesAndTags": {
+        "title": "Categories & Tags",
+        "category": "Category",
+        "categoryPlaceholder": "Select a category",
+        "tags": "Tags"
+      },
+      "buttons": {
+        "publishing": "Publishing...",
+        "publish": "Publish Product"
+      },
+      "alerts": {
+        "success": "Your product was added successfully",
+        "imageLimit": "You can only upload up to {{max}} images. Please remove some images first."
+      }
+    },
+    "syrianGovernorates": {
+      "Aleppo": "Aleppo",
+      "Damascus": "Damascus",
+      "Daraa": "Daraa",
+      "Deir ez-Zor": "Deir ez-Zor",
+      "Hama": "Hama",
+      "Al-Hasakah": "Al-Hasakah",
+      "Homs": "Homs",
+      "Idlib": "Idlib",
+      "Latakia": "Latakia",
+      "Quneitra": "Quneitra",
+      "Raqqa": "Raqqa",
+      "Rif Dimashq": "Rif Dimashq",
+      "Al-Suwayda": "Al-Suwayda",
+      "Tartus": "Tartus"
+    },
+    "product": {
+      "notFound": "Product not found",
+      "imageAlt": "Product Image",
+      "thumbnailAlt": "Product Thumbnail",
+      "availability": "Availability",
+      "inStock": "In Stock",
+      "outOfStock": "Out of Stock",
+      "currency": "USD",
+      "addToCart": "Call the seller",
+      "tags": "Tags",
+      "productTags": {
+        "Premium": "Premium",
+        "New Arrival": "New Arrival",
+        "Limited Edition": "Limited Edition",
+        "Best Seller": "Best Seller"
+      }
+    },
+    "login": {
+      "welcomeBack": "Welcome back",
+      "signInMessage": "Please sign in to your account",
+      "needLoginMessage": "Please login first to visit this page",
+      "registrationSuccessMessage": "You have successfully registered.",
+      "loginNowMessage": "Please login",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "Enter your email",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "rememberMe": "Remember me",
+      "signIn": "Sign in",
+      "signingIn": "Signing in...",
+      "dontHaveAccount": "Don’t have an account?",
+      "signUp": "Sign up"
+    },
+    "signUp": {
+      "createAccount": "Create an Account",
+      "getStarted": "Sign up to get started",
+      "signingUp": "Signing up...",
+      "signUp": "Sign up",
+      "alreadyHaveAccount": "Already have an account?",
+      "signIn": "Sign in"
+    },
+    "form": {
+      "username": "Username",
+      "enterUsername": "Enter your username",
+      "email": "Email address",
+      "enterEmail": "Enter your email",
+      "password": "Password",
+      "enterPassword": "Enter your password",
+      "confirmPassword": "Confirm Password",
+      "reenterPassword": "Re-enter your password",
+      "acceptTerms": "I accept the terms and conditions"
+    },
+    "register": {
+      "createAccount": "Create an Account",
+      "signUpToGetStarted": "Sign up to get started",
+      "username": "Username",
+      "email": "Email Address",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "acceptTerms": "I accept the Terms & Conditions",
+      "signUp": "Sign Up",
+      "signingUp": "Signing Up...",
+      "alreadyHaveAccount": "Already have an account?",
+      "signIn": "Sign In",
+      "enterUsername": "Enter your username",
+      "enterEmail": "Enter your email",
+      "enterPassword": "Enter your password",
+      "reEnterPassword": "Re-enter your password",
+      "redirectingIn": "Success Sign-up Redirecting in {{countdown}} seconds...",
+      "skip": "Skip",
+      "phone": "Phone Number"
+    },
+    "enter_otp": "Enter OTP",
+    "otp_description": "We sent a 6-digit OTP to your email/phone. Please enter it below.",
+    "one_time_password": "One-Time Password",
+    "verifying": "Verifying...",
+    "verify_otp": "Verify OTP",
+    "loginBtn": "login",
+    "alert": {
+      "archived": "Your Product Was Archived Successfully",
+      "published": "Your Product Was Published Successfully",
+      "loginSuccess": "You have successfully logged in.",
+      "loginRequired": "You need to login first to add this product.",
+      "logoutSuccess": "You have successfully logged out.",
+      "productAdded": "Product added to wishlist successfully.",
+      "productDeleted": "Product deleted from wishlist successfully.",
+      "addSuccess": "Product Add To Cart Successfully",
+      "addError": "This Product is Already in Cart",
+      "deleteCart": "Product Deleted Successfully",
+      "loginToken": "You Need To Login First To Add To The Cart",
+      "update": "You Updated The Amount Of The Product",
+      "updateError": "You Can't Add or Remove More From Amount["
+    },
+    "noPromotedProducts": "No Promoted Products To Show",
+    "featuredProducts": "Featured Products",
+    "curatedProducts": "Check out our specially curated products with exclusive offers",
+    "specialOffer": "Special Offer",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock",
+    "viewDetails": "View Details",
+
+    "Description": "Description"
+  },
+  "subscription": {
+    "title": "Subscribe to our newsletter",
+    "description": "Subscribe to the newsletter to receive the latest posts",
+    "emailPlaceholder": "Email address",
+    "subscribeButton": "Subscribe"
+  },
+  "available": "Available",
+  "not_available": "Not Available",
+  "contact_us": "Contact Us",
+  "cart": {
+    "heading": "Shopping Cart",
+    "products": "Products",
+    "quantity": "Quantity",
+    "subTotal": "Sub-Total",
+    "removeItem": "Remove item",
+    "returnBtn": "Return to shop",
+    "totals": {
+      "title": "Cart Totals",
+      "subTotal": "Sub-total",
+      "shipping": "Shipping",
+      "discount": "Discount",
+      "tax": "Tax",
+      "total": "Total",
+      "checkout": "Proceed to Checkout"
+    },
+    "free": "Free",
+    "items": {
+      "1": {
+        "title": "Lorem ipsum dolor sit amet consectetur.",
+        "description": "Metus maecenas mi nam faucibus."
+      },
+      "2": {
+        "title": "Lorem ipsum dolor sit amet consectetur.",
+        "description": "Metus maecenas mi nam faucibus."
+      }
+    }
+  },
+  "details": "View Details",
+  "contact": "Contact Us",
+  "SimllarData": "Similar Products"
+}
