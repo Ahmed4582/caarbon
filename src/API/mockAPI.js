@@ -5,61 +5,61 @@ import HandShake from "../assets/Svg/HandShake.svg";
 import HeadPhone from "../assets/Svg/HeadPhone.svg";
 import CreditCart from "../assets/Svg/CreditCart.svg";
 
-// صور سيارات من Unsplash - صور عالية الجودة لسيارات حقيقية
+// صور سيارات من مصادر موثوقة - Pixabay و Pexels
 const getCarImage = (carId, imageIndex = 0) => {
   const carImages = {
     1: [
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&h=600&fit=crop&q=80", // Toyota Camry - Sedan
-      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop&q=80",
+      "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg", // Toyota Camry - Sedan
+      "https://cdn.pixabay.com/photo/2016/04/01/12/16/car-1300629_1280.jpg",
+      "https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/11/18/17/46/automobile-1834274_1280.jpg",
     ],
     2: [
-      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop&q=80", // Honda Accord - Sedan
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop&q=80",
+      "https://cdn.pixabay.com/photo/2016/11/18/17/46/automobile-1834274_1280.jpg", // Honda Accord - Sedan
+      "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/04/01/12/16/car-1300629_1280.jpg",
     ],
     3: [
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop&q=80", // Nissan Altima - Sedan
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop&q=80",
+      "https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg", // Nissan Altima - Sedan
+      "https://cdn.pixabay.com/photo/2016/11/18/17/46/automobile-1834274_1280.jpg",
     ],
     4: [
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop&q=80", // Ford Explorer - SUV
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&h=600&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop&q=80",
+      "https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg", // Ford Explorer - SUV
+      "https://cdn.pixabay.com/photo/2016/04/01/12/16/car-1300629_1280.jpg",
+      "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/11/18/17/46/automobile-1834274_1280.jpg",
+      "https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg",
     ],
     5: [
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop&q=80", // Chevrolet Tahoe - SUV
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop&q=80",
+      "https://cdn.pixabay.com/photo/2016/04/01/12/16/car-1300629_1280.jpg", // Chevrolet Tahoe - SUV
+      "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/11/18/17/46/automobile-1834274_1280.jpg",
     ],
     6: [
-      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop&q=80", // BMW 3 Series - Luxury
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&h=600&fit=crop&q=80",
+      "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg", // BMW 3 Series - Luxury
+      "https://cdn.pixabay.com/photo/2016/04/01/12/16/car-1300629_1280.jpg",
+      "https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/11/18/17/46/automobile-1834274_1280.jpg",
     ],
     7: [
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop&q=80", // Mercedes C-Class - Luxury
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop&q=80",
+      "https://cdn.pixabay.com/photo/2016/11/18/17/46/automobile-1834274_1280.jpg", // Mercedes C-Class - Luxury
+      "https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg",
     ],
     8: [
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop&q=80", // Audi A4 - Luxury
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&h=600&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop&q=80",
+      "https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg", // Audi A4 - Luxury
+      "https://cdn.pixabay.com/photo/2016/04/01/12/16/car-1300629_1280.jpg",
+      "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/11/18/17/46/automobile-1834274_1280.jpg",
+      "https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg",
     ],
     9: [
-      "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop&q=80", // Tesla Model 3 - Electric
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop&q=80",
+      "https://cdn.pixabay.com/photo/2016/04/01/12/16/car-1300629_1280.jpg", // Tesla Model 3 - Electric
+      "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/11/18/17/46/automobile-1834274_1280.jpg",
     ],
     10: [
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=600&fit=crop&q=80", // Hyundai Elantra - Sedan
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop&q=80",
+      "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg", // Hyundai Elantra - Sedan
+      "https://cdn.pixabay.com/photo/2016/11/18/17/46/automobile-1834274_1280.jpg",
     ],
   };
   const images = carImages[carId] || carImages[1];

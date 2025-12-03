@@ -79,9 +79,25 @@ const PromoteSlider = () => {
                 <div className="relative overflow-hidden">
                   <div className="aspect-[4/3] overflow-hidden bg-gray-100">
                     <img
-                      src={product?.images[0]?.image}
+                      src={(() => {
+                        if (product?.images && product.images.length > 0) {
+                          const firstImage = product.images[0];
+                          if (typeof firstImage === "object" && firstImage.image) {
+                            return firstImage.image.startsWith("http") 
+                              ? firstImage.image 
+                              : `https://92.113.27.167:7644${firstImage.image}`;
+                          }
+                          if (typeof firstImage === "string" && firstImage.startsWith("http")) {
+                            return firstImage;
+                          }
+                        }
+                        return "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg";
+                      })()}
                       alt={product.name}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      onError={(e) => {
+                        e.target.src = "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg";
+                      }}
                     />
                   </div>
 

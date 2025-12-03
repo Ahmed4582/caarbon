@@ -46,11 +46,27 @@ const SimilarProductsSwiper = ({ products }) => {
         {products?.map((product) => (
           <SwiperSlide key={product.id}>
             <div className="bg-white shadow-lg rounded-xl overflow-hidden transition-all hover:shadow-xl h-full flex flex-col">
-              <div className="relative h-56 overflow-hidden">
+              <div className="relative h-56 overflow-hidden bg-gray-100">
                 <img
-                  src={`https://92.113.27.167:7644${product?.images[0]?.image}`}
-                  alt={product.name}
+                  src={(() => {
+                    if (product?.images && product.images.length > 0) {
+                      const firstImage = product.images[0];
+                      if (typeof firstImage === "object" && firstImage.image) {
+                        return firstImage.image.startsWith("http") 
+                          ? firstImage.image 
+                          : `https://92.113.27.167:7644${firstImage.image}`;
+                      }
+                      if (typeof firstImage === "string" && firstImage.startsWith("http")) {
+                        return firstImage;
+                      }
+                    }
+                    return "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg";
+                  })()}
+                  alt={product.name || product.description}
                   className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.src = "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg";
+                  }}
                 />
               </div>
               <div className="p-4 flex flex-col justify-between flex-grow">

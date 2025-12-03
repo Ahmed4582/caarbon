@@ -50,12 +50,24 @@ const ProductDetails = () => {
   useEffect(() => {
     if (productDetails?.images?.length > 0) {
       // تعيين الصورة الكبيرة بشكل صحيح عند تحميل تفاصيل المنتج
-      const firstImage = productDetails.images[0]?.image || productDetails.images[0];
-      setSelectedImage(
-        typeof firstImage === "string" && firstImage.startsWith("http") 
-          ? firstImage 
-          : `https://92.113.27.167:7644${firstImage}`
-      );
+      const firstImageObj = productDetails.images[0];
+      let imageUrl = "";
+      
+      if (typeof firstImageObj === "object" && firstImageObj.image) {
+        // إذا كانت الصورة كائن يحتوي على property image
+        imageUrl = firstImageObj.image.startsWith("http") 
+          ? firstImageObj.image 
+          : `https://92.113.27.167:7644${firstImageObj.image}`;
+      } else if (typeof firstImageObj === "string") {
+        // إذا كانت الصورة string مباشرة
+        imageUrl = firstImageObj.startsWith("http") 
+          ? firstImageObj 
+          : `https://92.113.27.167:7644${firstImageObj}`;
+      }
+      
+      if (imageUrl) {
+        setSelectedImage(imageUrl);
+      }
     }
   }, [productDetails]);
 
@@ -92,13 +104,31 @@ const ProductDetails = () => {
               {/* Product Image */}
               <div className="space-y-4">
                 {/* الصورة المختارة */}
-                <div className="bg-white rounded-lg overflow-hidden shadow-lg">
+                <div className="bg-white rounded-lg overflow-hidden shadow-lg bg-gray-100">
                   <img
-                    src={selectedImage || productDetails.images?.[0]?.image || productDetails.images?.[0]}
-                    alt={productDetails.name}
+                    src={(() => {
+                      if (selectedImage) return selectedImage;
+                      if (productDetails?.images?.[0]) {
+                        const firstImg = productDetails.images[0];
+                        if (typeof firstImg === "object" && firstImg.image) {
+                          return firstImg.image.startsWith("http") 
+                            ? firstImg.image 
+                            : `https://92.113.27.167:7644${firstImg.image}`;
+                        }
+                        if (typeof firstImg === "string") {
+                          return firstImg.startsWith("http") 
+                            ? firstImg 
+                            : `https://92.113.27.167:7644${firstImg}`;
+                        }
+                      }
+                      return "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg";
+                    })()}
+                    alt={productDetails.name || productDetails.description}
                     className="w-full h-auto max-h-[400px] object-cover"
                     onError={(e) => {
-                      e.target.src = "https://via.placeholder.com/800x600?text=Car+Image";
+                      if (e.target.src !== "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg") {
+                        e.target.src = "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg";
+                      }
                     }}
                   />
                 </div>
@@ -106,25 +136,37 @@ const ProductDetails = () => {
                 {/* معرض الصور المصغرة */}
                 <div className="flex gap-2 overflow-x-auto pb-2 ">
                   {productDetails.images?.map((imageObj, index) => {
-                    const imageUrl = typeof imageObj === "object" && imageObj.image
-                      ? (imageObj.image.startsWith("http") ? imageObj.image : `https://92.113.27.167:7644${imageObj.image}`)
-                      : (typeof imageObj === "string" && imageObj.startsWith("http") ? imageObj : `https://92.113.27.167:7644${imageObj}`);
+                    let imageUrl = "";
+                    if (typeof imageObj === "object" && imageObj.image) {
+                      imageUrl = imageObj.image.startsWith("http") 
+                        ? imageObj.image 
+                        : `https://92.113.27.167:7644${imageObj.image}`;
+                    } else if (typeof imageObj === "string") {
+                      imageUrl = imageObj.startsWith("http") 
+                        ? imageObj 
+                        : `https://92.113.27.167:7644${imageObj}`;
+                    } else {
+                      imageUrl = "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg";
+                    }
+                    
                     return (
                       <div
                         key={imageObj?.id || index}
                         onClick={() => setSelectedImage(imageUrl)}
-                        className={`cursor-pointer m-2 rounded-lg overflow-hidden flex-shrink-0 transition-all duration-200 ${
+                        className={`cursor-pointer m-2 rounded-lg overflow-hidden flex-shrink-0 transition-all duration-200 border-2 ${
                           selectedImage === imageUrl
-                            ? "ring-2 ring-[#b68d33] scale-105"
-                            : "hover:scale-105"
+                            ? "ring-2 ring-[#b68d33] scale-105 border-[#b68d33]"
+                            : "hover:scale-105 border-transparent"
                         }`}
                       >
                         <img
                           src={imageUrl}
-                          alt={`${productDetails.name} - ${index + 1}`}
+                          alt={`${productDetails.name || productDetails.description} - ${index + 1}`}
                           className="w-20 h-20 object-cover"
                           onError={(e) => {
-                            e.target.src = "https://via.placeholder.com/200x200?text=Car+Image";
+                            if (e.target.src !== "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg") {
+                              e.target.src = "https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_1280.jpg";
+                            }
                           }}
                         />
                       </div>
