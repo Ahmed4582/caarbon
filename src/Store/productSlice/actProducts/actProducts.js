@@ -1,18 +1,15 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import mockAPI from "../../../API/mockAPI";
 
 export const actProducts = createAsyncThunk(
   "api/products",
   async (_, thunkApi) => {
     const { rejectWithValue } = thunkApi;
     try {
-      const res = await axios.get(`/car/get-cars`, {
-        mode: "cors",
-      });
-      
-      return res.data.data;
+      const res = await mockAPI.getProducts();
+      return res;
     } catch (error) {
-      rejectWithValue(error);
+      return rejectWithValue(error);
     }
   }
 );

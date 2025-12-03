@@ -50,8 +50,11 @@ const ProductDetails = () => {
   useEffect(() => {
     if (productDetails?.images?.length > 0) {
       // تعيين الصورة الكبيرة بشكل صحيح عند تحميل تفاصيل المنتج
+      const firstImage = productDetails.images[0]?.image || productDetails.images[0];
       setSelectedImage(
-        `https://92.113.27.167:7644${productDetails.images[0].image}`
+        typeof firstImage === "string" && firstImage.startsWith("http") 
+          ? firstImage 
+          : `https://92.113.27.167:7644${firstImage}`
       );
     }
   }, [productDetails]);
@@ -91,36 +94,42 @@ const ProductDetails = () => {
                 {/* الصورة المختارة */}
                 <div className="bg-white rounded-lg overflow-hidden shadow-lg">
                   <img
-                    src={selectedImage}
+                    src={selectedImage || productDetails.images?.[0]?.image || productDetails.images?.[0]}
                     alt={productDetails.name}
                     className="w-full h-auto max-h-[400px] object-cover"
+                    onError={(e) => {
+                      e.target.src = "https://via.placeholder.com/800x600?text=Car+Image";
+                    }}
                   />
                 </div>
 
                 {/* معرض الصور المصغرة */}
                 <div className="flex gap-2 overflow-x-auto pb-2 ">
-                  {productDetails.images?.map((imageObj, index) => (
-                    <div
-                      key={imageObj.id}
-                      onClick={() =>
-                        setSelectedImage(
-                          `https://92.113.27.167:7644${imageObj?.image}`
-                        )
-                      } // تغيير الصورة عند النقر
-                      className={`cursor-pointer m-2 rounded-lg overflow-hidden flex-shrink-0 transition-all duration-200 ${
-                        selectedImage ===
-                        `https://92.113.27.167:7644${imageObj?.image}`
-                          ? "ring-2 ring-[#b68d33] scale-105"
-                          : "hover:scale-105"
-                      }`}
-                    >
-                      <img
-                        src={`https://92.113.27.167:7644${imageObj?.image}`}
-                        alt={`${productDetails.name} - ${index + 1}`}
-                        className="w-20 h-20 object-cover"
-                      />
-                    </div>
-                  ))}
+                  {productDetails.images?.map((imageObj, index) => {
+                    const imageUrl = typeof imageObj === "object" && imageObj.image
+                      ? (imageObj.image.startsWith("http") ? imageObj.image : `https://92.113.27.167:7644${imageObj.image}`)
+                      : (typeof imageObj === "string" && imageObj.startsWith("http") ? imageObj : `https://92.113.27.167:7644${imageObj}`);
+                    return (
+                      <div
+                        key={imageObj?.id || index}
+                        onClick={() => setSelectedImage(imageUrl)}
+                        className={`cursor-pointer m-2 rounded-lg overflow-hidden flex-shrink-0 transition-all duration-200 ${
+                          selectedImage === imageUrl
+                            ? "ring-2 ring-[#b68d33] scale-105"
+                            : "hover:scale-105"
+                        }`}
+                      >
+                        <img
+                          src={imageUrl}
+                          alt={`${productDetails.name} - ${index + 1}`}
+                          className="w-20 h-20 object-cover"
+                          onError={(e) => {
+                            e.target.src = "https://via.placeholder.com/200x200?text=Car+Image";
+                          }}
+                        />
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
 

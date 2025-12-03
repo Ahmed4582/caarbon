@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import mockAPI from "../../../API/mockAPI";
 
 export const actArchive = createAsyncThunk(
   "api/Archive",
@@ -8,14 +8,10 @@ export const actArchive = createAsyncThunk(
     const { token } = getState().loginSlice;
 
     try {
-      const res = await axios.get(`/api/archive-product/${id}`, {
-        headers: {
-          token: token,
-        },
-      });
-      return res.data;
+      const res = await mockAPI.archiveProduct(id, token);
+      return res;
     } catch (error) {
-      rejectWithValue(error.message);
+      return rejectWithValue(error.message);
     }
   }
 );

@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import mockAPI from "../../../API/mockAPI";
 
 export const actUserInfo = createAsyncThunk(
   "api/user-info",
@@ -8,13 +8,8 @@ export const actUserInfo = createAsyncThunk(
     const { token } = getState().loginSlice;
 
     try {
-      const response = await axios.get(`auth/User`, {
-        headers: {
-          jwt: token,
-        },
-      });
-
-      return response.data;
+      const response = await mockAPI.getUserInfo(token);
+      return response;
     } catch (error) {
       return rejectWithValue(error.response?.data || error.message);
     }

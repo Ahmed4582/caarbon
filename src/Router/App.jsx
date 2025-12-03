@@ -19,6 +19,10 @@ const UserProduct = lazy(() => import("../Pages/UserProduct/UserProduct"));
 const ForgetPassword = lazy(() =>
   import("../Pages/ForgetPassword/ForgetPassword")
 );
+const Wish = lazy(() => import("../Pages/Wish/Wish"));
+const CheckOut = lazy(() => import("../Pages/CheckOut/CheckOut"));
+const PaymentSuccessful = lazy(() => import("../Pages/PaymentSuccessful/PaymentSuccessful"));
+const OTP = lazy(() => import("../Pages/OTP/OTP"));
 
 export default function App() {
   const router = createBrowserRouter([
@@ -41,64 +45,95 @@ export default function App() {
           ),
         },
 
-        // {
-        //   path: "cart",
-        //   element: (
-        //     <AuthProtectRoute>
-        //       <CartPage />,
-        //     </AuthProtectRoute>
-        //   ),
-        // },
-        // {
-        //   path: "UserInfo",
-        //   element: (
-        //     <AuthProtectRoute>
-        //       <UserInfo />
-        //     </AuthProtectRoute>
-        //   ),
-        // },
+        {
+          path: "cart",
+          element: (
+            <AuthProtectRoute>
+              <CartPage />
+            </AuthProtectRoute>
+          ),
+        },
+        {
+          path: "UserInfo",
+          element: (
+            <AuthProtectRoute>
+              <UserInfo />
+            </AuthProtectRoute>
+          ),
+        },
 
-        // {
-        //   path: "Products",
-        //   element: <Products />,
-        // },
-
+        {
+          path: "Products",
+          element: <Products />,
+        },
+        {
+          path: "Wish",
+          element: (
+            <AuthProtectRoute>
+              <Wish />
+            </AuthProtectRoute>
+          ),
+        },
+        {
+          path: "CheckOut",
+          element: (
+            <AuthProtectRoute>
+              <CheckOut />
+            </AuthProtectRoute>
+          ),
+        },
+        {
+          path: "PaymentSuccessful",
+          element: (
+            <AuthProtectRoute>
+              <PaymentSuccessful />
+            </AuthProtectRoute>
+          ),
+        },
         {
           path: "Details/:id",
           element: <Details />,
         },
       ],
     },
-    // {
-    //   path: "/User",
-    //   element: <AuthLayout />,
-    //   children: [
-    //     {
-    //       path: "login",
-    //       element: (
-    //         <AuthRedirect>
-    //           <Login />
-    //         </AuthRedirect>
-    //       ),
-    //     },
-    //     {
-    //       path: "register",
-    //       element: (
-    //         <AuthRedirect>
-    //           <Register />
-    //         </AuthRedirect>
-    //       ),
-    //     },
-    //     {
-    //       path: "forgetPassword",
-    //       element: (
-    //         <AuthRedirect>
-    //           <ForgetPassword />
-    //         </AuthRedirect>
-    //       ),
-    //     },
-    //   ],
-    // },
+    {
+      path: "/User",
+      element: <AuthLayout />,
+      children: [
+        {
+          path: "login",
+          element: (
+            <AuthRedirect>
+              <Login />
+            </AuthRedirect>
+          ),
+        },
+        {
+          path: "register",
+          element: (
+            <AuthRedirect>
+              <Register />
+            </AuthRedirect>
+          ),
+        },
+        {
+          path: "forgetPassword",
+          element: (
+            <AuthRedirect>
+              <ForgetPassword />
+            </AuthRedirect>
+          ),
+        },
+        {
+          path: "OTP",
+          element: (
+            <AuthRedirect>
+              <OTP />
+            </AuthRedirect>
+          ),
+        },
+      ],
+    },
   ]);
 
   return (

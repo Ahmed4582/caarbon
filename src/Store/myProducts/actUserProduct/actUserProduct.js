@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import mockAPI from "../../../API/mockAPI";
 
 export const actUserProduct = createAsyncThunk(
   "api/actUserProduct",
@@ -8,16 +8,10 @@ export const actUserProduct = createAsyncThunk(
     const { token } = getState().loginSlice;
 
     try {
-      const res = await axios.get(`/api/myproducts`, {
-        mode: "cors",
-        headers: {
-          token,
-        },
-      });
-
-      return res.data.data;
+      const res = await mockAPI.getUserProducts(token);
+      return res;
     } catch (error) {
-      rejectWithValue(error.message);
+      return rejectWithValue(error.message);
     }
   }
 );

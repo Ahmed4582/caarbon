@@ -1,25 +1,14 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import mockAPI from "../../../API/mockAPI";
 const actUpdateCart = createAsyncThunk(
   "api/update-cart",
   async ({ ProductId, amount }, thunkAPI) => {
     const { rejectWithValue, getState } = thunkAPI;
     const { token } = getState().loginSlice;
-    const { id } = getState().userInfoSlice.info;
-
-    const data = {
-      user_id: id,
-      product_id: ProductId,
-      amount: amount,
-    };
 
     try {
-      const res = await axios.post(`cart/update-amount-product`, data, {
-        headers: {
-          jwt: token, // JWT token
-        },
-      });
-      return res.data;
+      const res = await mockAPI.updateCart(ProductId, amount, token);
+      return res;
     } catch (error) {
       return rejectWithValue(error.response?.data || error.message);
     }

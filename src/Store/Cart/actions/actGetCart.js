@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import mockAPI from "../../../API/mockAPI";
 
 export const actGetCart = createAsyncThunk(
   "api/get-cart",
@@ -8,16 +8,10 @@ export const actGetCart = createAsyncThunk(
     const { token } = getState().loginSlice;
 
     try {
-      const res = await axios.get(`cart/get-cart`, {
-        headers: {
-          jwt: token,
-        },
-      });
-
-      
-      return res.data.data.products;
+      const res = await mockAPI.getCart(token);
+      return res;
     } catch (error) {
-      rejectWithValue(error);
+      return rejectWithValue(error);
     }
   }
 );

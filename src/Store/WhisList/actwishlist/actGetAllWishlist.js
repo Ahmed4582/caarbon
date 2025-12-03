@@ -1,20 +1,15 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import mockAPI from "../../../API/mockAPI";
 
 export const actGetAllWishlist = createAsyncThunk(
   "wishlist/get-product",
   async (id, thunkAPI) => {
     const { rejectWithValue, getState } = thunkAPI;
-    // const { token } = getState().loginSlice;
+    const { token } = getState().loginSlice;
 
     try {
-      // const response = await axios.get(`/api/mywishlist`, {
-      //   headers: {
-      //     token: token,
-      //   },
-      // });
-
-      // return response.data.data;
+      const response = await mockAPI.getWishlist(token);
+      return response;
     } catch (error) {
       return rejectWithValue(error.response?.data || error.message);
     }

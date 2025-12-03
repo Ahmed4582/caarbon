@@ -41,9 +41,20 @@ const ProductCard = ({ products }) => {
             {/* الصورة */}
             <div className="w-full overflow-hidden">
               <img
-                src={`https://92.113.27.167:7644${product?.images[0]?.image}`}
+                src={
+                  product?.images?.[0]?.image 
+                    ? (product.images[0].image.startsWith("http") 
+                        ? product.images[0].image 
+                        : `https://92.113.27.167:7644${product.images[0].image}`)
+                    : (typeof product?.images?.[0] === "string" && product.images[0].startsWith("http")
+                        ? product.images[0]
+                        : "https://via.placeholder.com/400x300?text=Car+Image")
+                }
                 className="w-full h-[200px] object-cover transform transition-transform duration-300 group-hover:scale-105"
                 alt={product.name || t("product_image")}
+                onError={(e) => {
+                  e.target.src = "https://via.placeholder.com/400x300?text=Car+Image";
+                }}
               />
             </div>
 

@@ -1,18 +1,15 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import mockAPI from "../../../API/mockAPI";
 
 export const actCategory = createAsyncThunk(
   "api/category",
   async (_, thunkApi) => {
     const { rejectWithValue } = thunkApi;
     try {
-      const res = await axios.get(
-        `api/get-categories`
-      );
-
-      return res.data.data;
+      const res = await mockAPI.getCategories();
+      return res;
     } catch (error) {
-      rejectWithValue(error);
+      return rejectWithValue(error);
     }
   }
 );
